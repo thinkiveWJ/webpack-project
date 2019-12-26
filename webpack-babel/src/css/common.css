@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html,body{
+  height: 100%;
+  background: #f00;
+}
+.box{
+  border-radius: 8px;
+  transform: rotateX(30deg);
+  display: flex;
+  border: 1px solid #00f;
+  width: 200px;
+  height: 200px;
+  background: #0f0;
+}

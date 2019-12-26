@@ -23,6 +23,26 @@ module.exports = {
           test: /\.js$/, 
           include: /src/, 
           loader: "babel-loader" 
+        },
+        {
+          test: /\.css$/,
+          use: [
+            {
+              loader: "style-loader"
+            },
+            {
+              loader: "css-loader"
+            },
+            {
+              loader: "postcss-loader",
+              options: {
+                ident: 'postcss',
+                plugins: [
+                  require('autoprefixer')
+                ]
+              }
+            }
+          ]
         }
       ]
   }
